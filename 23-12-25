@@ -1,0 +1,1031 @@
+
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-90-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+7 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Last login: Tue Dec 23 11:49:29 2025 from 172.28.65.126
+arijit@abhishek-OptiPlex-5050:~$ pwd
+/home/arijit
+arijit@abhishek-OptiPlex-5050:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.9G  1.9M  3.9G   1% /run
+/dev/sda2       912G  351G  516G  41% /
+tmpfs            20G  231M   20G   2% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+efivarfs        256K  239K   13K  96% /sys/firmware/efi/efivars
+/dev/sda1       511M   36M  476M   8% /boot/efi
+tmpfs           3.9G  108K  3.9G   1% /run/user/1000
+tmpfs           3.9G   64K  3.9G   1% /run/user/1001
+arijit@abhishek-OptiPlex-5050:~$ ^C
+arijit@abhishek-OptiPlex-5050:~$ cd
+arijit@abhishek-OptiPlex-5050:~$ mkdir -p aryjit_sra_project
+arijit@abhishek-OptiPlex-5050:~$ cd aryjit_sra_project
+arijit@abhishek-OptiPlex-5050:~/aryjit_sra_project$ which prefetch
+arijit@abhishek-OptiPlex-5050:~/aryjit_sra_project$ prefetch --version
+Command 'prefetch' not found, but can be installed with:
+sudo apt install sra-toolkit
+arijit@abhishek-OptiPlex-5050:~/aryjit_sra_project$ cd ~
+arijit@abhishek-OptiPlex-5050:~$ wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.c                                                              urrent-ubuntu64.tar.gz
+--2025-12-23 12:02:19--  https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu                                                              64.tar.gz
+Resolving ftp-trace.ncbi.nlm.nih.gov (ftp-trace.ncbi.nlm.nih.gov)... 130.14.250.31, 130.14.250.10, 13                                                              0.14.250.12, ...
+Connecting to ftp-trace.ncbi.nlm.nih.gov (ftp-trace.ncbi.nlm.nih.gov)|130.14.250.31|:443... connected                                                              .
+HTTP request sent, awaiting response... 200 OK
+Length: 92046842 (88M) [application/x-gzip]
+Saving to: ‘sratoolkit.current-ubuntu64.tar.gz’
+
+sratoolkit.current-ubuntu 100%[==================================>]  87.78M  16.3MB/s    in 7.0s
+
+2025-12-23 12:02:28 (12.6 MB/s) - ‘sratoolkit.current-ubuntu64.tar.gz’ saved [92046842/92046842]
+
+arijit@abhishek-OptiPlex-5050:~$ tar -xvzf sratoolkit.current-ubuntu64.tar.gz
+sratoolkit.3.3.0-ubuntu64/
+sratoolkit.3.3.0-ubuntu64/bin/
+sratoolkit.3.3.0-ubuntu64/bin/kdbmeta.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/illumina-load
+sratoolkit.3.3.0-ubuntu64/bin/vdb-validate.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sra-stat.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sff-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/kar.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/bam-load
+sratoolkit.3.3.0-ubuntu64/bin/abi-load
+sratoolkit.3.3.0-ubuntu64/bin/vdb-encrypt.3
+sratoolkit.3.3.0-ubuntu64/bin/rcexplain.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/kar.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-validate
+sratoolkit.3.3.0-ubuntu64/bin/srapath-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-encrypt
+sratoolkit.3.3.0-ubuntu64/bin/sratools
+sratoolkit.3.3.0-ubuntu64/bin/latf-load.3
+sratoolkit.3.3.0-ubuntu64/bin/bam-load.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-copy.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/pacbio-load
+sratoolkit.3.3.0-ubuntu64/bin/sra-search.3
+sratoolkit.3.3.0-ubuntu64/bin/fasterq-dump-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/test-sra.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-config.3
+sratoolkit.3.3.0-ubuntu64/bin/sam-dump
+sratoolkit.3.3.0-ubuntu64/bin/sra-stat
+sratoolkit.3.3.0-ubuntu64/bin/vdb-validate.3
+sratoolkit.3.3.0-ubuntu64/bin/sff-load.3
+sratoolkit.3.3.0-ubuntu64/bin/fastq-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-copy.3
+sratoolkit.3.3.0-ubuntu64/bin/abi-dump
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort.3
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort
+sratoolkit.3.3.0-ubuntu64/bin/prefetch.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sra-search.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/illumina-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/align-info.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-unlock.3
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort-cg
+sratoolkit.3.3.0-ubuntu64/bin/test-sra
+sratoolkit.3.3.0-ubuntu64/bin/vdb-unlock
+sratoolkit.3.3.0-ubuntu64/bin/pacbio-load.3
+sratoolkit.3.3.0-ubuntu64/bin/ncbi/
+sratoolkit.3.3.0-ubuntu64/bin/ncbi/default.kfg
+sratoolkit.3.3.0-ubuntu64/bin/ncbi/certs.kfg
+sratoolkit.3.3.0-ubuntu64/bin/ncbi/vdb-copy.kfg
+sratoolkit.3.3.0-ubuntu64/bin/bam-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/kdbmeta.3
+sratoolkit.3.3.0-ubuntu64/bin/illumina-dump
+sratoolkit.3.3.0-ubuntu64/bin/sff-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/sff-dump
+sratoolkit.3.3.0-ubuntu64/bin/cache-mgr.3
+sratoolkit.3.3.0-ubuntu64/bin/srf-load.3
+sratoolkit.3.3.0-ubuntu64/bin/cache-mgr.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort-cg.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/cg-load
+sratoolkit.3.3.0-ubuntu64/bin/sra-sort-cg.3
+sratoolkit.3.3.0-ubuntu64/bin/prefetch-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/kdbmeta
+sratoolkit.3.3.0-ubuntu64/bin/sra-pileup
+sratoolkit.3.3.0-ubuntu64/bin/vdb-dump
+sratoolkit.3.3.0-ubuntu64/bin/sff-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/abi-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/fasterq-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/fastq-dump-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-unlock.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/fasterq-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/illumina-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/srf-load
+sratoolkit.3.3.0-ubuntu64/bin/vdb-config.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/fastq-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/fastq-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/abi-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/fastq-dump
+sratoolkit.3.3.0-ubuntu64/bin/sam-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/sam-dump-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-decrypt
+sratoolkit.3.3.0-ubuntu64/bin/prefetch
+sratoolkit.3.3.0-ubuntu64/bin/sra-stat.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-decrypt.3
+sratoolkit.3.3.0-ubuntu64/bin/sam-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sra-pileup-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-encrypt.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/abi-load.3
+sratoolkit.3.3.0-ubuntu64/bin/sra-pileup.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/test-sra.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-dump.3
+sratoolkit.3.3.0-ubuntu64/bin/srf-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/rcexplain.3
+sratoolkit.3.3.0-ubuntu64/bin/sra-pileup.3
+sratoolkit.3.3.0-ubuntu64/bin/fastq-load.3
+sratoolkit.3.3.0-ubuntu64/bin/align-info
+sratoolkit.3.3.0-ubuntu64/bin/srapath.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/fastq-load
+sratoolkit.3.3.0-ubuntu64/bin/prefetch.3
+sratoolkit.3.3.0-ubuntu64/bin/illumina-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/cache-mgr
+sratoolkit.3.3.0-ubuntu64/bin/illumina-load.3
+sratoolkit.3.3.0-ubuntu64/bin/pacbio-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/srapath.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-config
+sratoolkit.3.3.0-ubuntu64/bin/sra-search
+sratoolkit.3.3.0-ubuntu64/bin/abi-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/latf-load
+sratoolkit.3.3.0-ubuntu64/bin/cg-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/helicos-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-decrypt.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/helicos-load
+sratoolkit.3.3.0-ubuntu64/bin/cg-load.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-lock.3
+sratoolkit.3.3.0-ubuntu64/bin/srapath
+sratoolkit.3.3.0-ubuntu64/bin/latf-load.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sff-load
+sratoolkit.3.3.0-ubuntu64/bin/vdb-lock
+sratoolkit.3.3.0-ubuntu64/bin/fasterq-dump
+sratoolkit.3.3.0-ubuntu64/bin/sratools.3
+sratoolkit.3.3.0-ubuntu64/bin/align-info.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-copy
+sratoolkit.3.3.0-ubuntu64/bin/kar
+sratoolkit.3.3.0-ubuntu64/bin/helicos-load.3
+sratoolkit.3.3.0-ubuntu64/bin/vdb-dump-orig.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/rcexplain
+sratoolkit.3.3.0-ubuntu64/bin/vdb-lock.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/sratools.3.3.0
+sratoolkit.3.3.0-ubuntu64/bin/vdb-dump.3.3.0
+sratoolkit.3.3.0-ubuntu64/README-blastn
+sratoolkit.3.3.0-ubuntu64/CHANGES
+sratoolkit.3.3.0-ubuntu64/example/
+sratoolkit.3.3.0-ubuntu64/example/perl/
+sratoolkit.3.3.0-ubuntu64/example/perl/base-stats.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/mismatch-stats.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/quality-stats.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/gene-lookup.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/simplefastq.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/splitfastq.pl
+sratoolkit.3.3.0-ubuntu64/example/perl/dump-reference.pl
+sratoolkit.3.3.0-ubuntu64/README-vdb-config
+sratoolkit.3.3.0-ubuntu64/schema/
+sratoolkit.3.3.0-ubuntu64/schema/insdc/
+sratoolkit.3.3.0-ubuntu64/schema/insdc/seq.vschema
+sratoolkit.3.3.0-ubuntu64/schema/insdc/sra.vschema
+sratoolkit.3.3.0-ubuntu64/schema/insdc/insdc.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/trace.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/pnbrdb.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/seq.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/sra.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/stats.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/clip.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/spotname.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/seq-graph.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/wgs-contig.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/varloc.vschema
+sratoolkit.3.3.0-ubuntu64/schema/ncbi/ncbi.vschema
+sratoolkit.3.3.0-ubuntu64/schema/vdb/
+sratoolkit.3.3.0-ubuntu64/schema/vdb/built-in.vschema
+sratoolkit.3.3.0-ubuntu64/schema/vdb/vdb.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/
+sratoolkit.3.3.0-ubuntu64/schema/sra/pacbio.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/nanopore.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/helicos.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/ion-torrent.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/pevents.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/abi.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/illumina.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/454.vschema
+sratoolkit.3.3.0-ubuntu64/schema/sra/generic-fastq.vschema
+sratoolkit.3.3.0-ubuntu64/schema/csra2/
+sratoolkit.3.3.0-ubuntu64/schema/csra2/stats.vschema
+sratoolkit.3.3.0-ubuntu64/schema/csra2/reference.vschema
+sratoolkit.3.3.0-ubuntu64/schema/csra2/read.vschema
+sratoolkit.3.3.0-ubuntu64/schema/csra2/csra2.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/
+sratoolkit.3.3.0-ubuntu64/schema/align/pileup-stats.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/seq.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/align.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/refseq.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/qstat.vschema
+sratoolkit.3.3.0-ubuntu64/schema/align/mate-cache.vschema
+sratoolkit.3.3.0-ubuntu64/README.md
+arijit@abhishek-OptiPlex-5050:~$ sratoolkit.3.3.x-ubuntu64
+sratoolkit.3.3.x-ubuntu64: command not found
+arijit@abhishek-OptiPlex-5050:~$ echo 'export PATH=$PATH:$HOME/sratoolkit.*/bin' >> ~/.bashrc
+source ~/.bashrc
+arijit@abhishek-OptiPlex-5050:~$ which prefetch
+arijit@abhishek-OptiPlex-5050:~$ prefetch --version
+Command 'prefetch' not found, but can be installed with:
+sudo apt install sra-toolkit
+arijit@abhishek-OptiPlex-5050:~$ ls ~ | grep sratoolkit
+sratoolkit.3.3.0-ubuntu64
+sratoolkit.current-ubuntu64.tar.gz
+arijit@abhishek-OptiPlex-5050:~$ ^C
+arijit@abhishek-OptiPlex-5050:~$ ^[[200~nano ~/.bashrc
+nano: command not found
+arijit@abhishek-OptiPlex-5050:~$ ~sudo apt update
+Command '~sudo' not found, did you mean:
+  command 'sudo' from deb sudo (1.9.9-1ubuntu2.5)
+  command 'sudo' from deb sudo-ldap (1.9.9-1ubuntu2.5)
+Try: sudo apt install <deb name>
+arijit@abhishek-OptiPlex-5050:~$ ^C
+arijit@abhishek-OptiPlex-5050:~$ 200~sudo apt install sra-toolkit~
+200~sudo: command not found
+arijit@abhishek-OptiPlex-5050:~$ sudo apt install sra-toolkit
+[sudo] password for arijit:
+Sorry, try again.
+[sudo] password for arijit:
+Sorry, try again.
+[sudo] password for arijit:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  blends-common libaec0 libfuse2 libhdf5-103-1 libkdf5-2 libmbedcrypto7 libmbedtls-dev libmbedtls14 libmbedx509-1 libncbi-vdb2
+  libncbi-wvdb2 libsz2 med-config menu
+Suggested packages:
+  blends-doc libmbedtls-doc menu-l10n gksu | kde-runtime | ktsuss
+The following NEW packages will be installed:
+  blends-common libaec0 libfuse2 libhdf5-103-1 libkdf5-2 libmbedcrypto7 libmbedtls-dev libmbedtls14 libmbedx509-1 libncbi-vdb2
+  libncbi-wvdb2 libsz2 med-config menu sra-toolkit
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 10.7 MB of archives.
+After this operation, 31.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 menu amd64 2.1.47ubuntu4 [354 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 blends-common all 0.7.4ubuntu1 [15.9 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libaec0 amd64 1.0.6-1 [20.1 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libfuse2 amd64 2.9.9-5ubuntu3 [90.3 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsz2 amd64 1.0.6-1 [5,354 B]
+Get:6 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libhdf5-103-1 amd64 1.10.7+repack-4ubuntu2 [1,295 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedcrypto7 amd64 2.28.0-1build1 [204 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedx509-1 amd64 2.28.0-1build1 [47.2 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedtls14 amd64 2.28.0-1build1 [82.7 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedtls-dev amd64 2.28.0-1build1 [629 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libkdf5-2 amd64 2.11.2+dfsg-4build2 [14.7 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libncbi-vdb2 amd64 2.11.2+dfsg-4build2 [1,364 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libncbi-wvdb2 amd64 2.11.2+dfsg-4build2 [1,252 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 sra-toolkit amd64 2.11.3+dfsg-1ubuntu1 [5,277 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 med-config all 3.7.1 [11.6 kB]
+Fetched 10.7 MB in 3s (3,937 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package menu.
+(Reading database ... 226746 files and directories currently installed.)
+Preparing to unpack .../00-menu_2.1.47ubuntu4_amd64.deb ...
+Unpacking menu (2.1.47ubuntu4) ...
+Selecting previously unselected package blends-common.
+Preparing to unpack .../01-blends-common_0.7.4ubuntu1_all.deb ...
+Unpacking blends-common (0.7.4ubuntu1) ...
+Selecting previously unselected package libaec0:amd64.
+Preparing to unpack .../02-libaec0_1.0.6-1_amd64.deb ...
+Unpacking libaec0:amd64 (1.0.6-1) ...
+Selecting previously unselected package libfuse2:amd64.
+Preparing to unpack .../03-libfuse2_2.9.9-5ubuntu3_amd64.deb ...
+Unpacking libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Selecting previously unselected package libsz2:amd64.
+Preparing to unpack .../04-libsz2_1.0.6-1_amd64.deb ...
+Unpacking libsz2:amd64 (1.0.6-1) ...
+Selecting previously unselected package libhdf5-103-1:amd64.
+Preparing to unpack .../05-libhdf5-103-1_1.10.7+repack-4ubuntu2_amd64.deb ...
+Unpacking libhdf5-103-1:amd64 (1.10.7+repack-4ubuntu2) ...
+Selecting previously unselected package libmbedcrypto7:amd64.
+Preparing to unpack .../06-libmbedcrypto7_2.28.0-1build1_amd64.deb ...
+Unpacking libmbedcrypto7:amd64 (2.28.0-1build1) ...
+Selecting previously unselected package libmbedx509-1:amd64.
+Preparing to unpack .../07-libmbedx509-1_2.28.0-1build1_amd64.deb ...
+Unpacking libmbedx509-1:amd64 (2.28.0-1build1) ...
+Selecting previously unselected package libmbedtls14:amd64.
+Preparing to unpack .../08-libmbedtls14_2.28.0-1build1_amd64.deb ...
+Unpacking libmbedtls14:amd64 (2.28.0-1build1) ...
+Selecting previously unselected package libmbedtls-dev:amd64.
+Preparing to unpack .../09-libmbedtls-dev_2.28.0-1build1_amd64.deb ...
+Unpacking libmbedtls-dev:amd64 (2.28.0-1build1) ...
+Selecting previously unselected package libkdf5-2.
+Preparing to unpack .../10-libkdf5-2_2.11.2+dfsg-4build2_amd64.deb ...
+Unpacking libkdf5-2 (2.11.2+dfsg-4build2) ...
+Selecting previously unselected package libncbi-vdb2.
+Preparing to unpack .../11-libncbi-vdb2_2.11.2+dfsg-4build2_amd64.deb ...
+Unpacking libncbi-vdb2 (2.11.2+dfsg-4build2) ...
+Selecting previously unselected package libncbi-wvdb2.
+Preparing to unpack .../12-libncbi-wvdb2_2.11.2+dfsg-4build2_amd64.deb ...
+Unpacking libncbi-wvdb2 (2.11.2+dfsg-4build2) ...
+Selecting previously unselected package sra-toolkit.
+Preparing to unpack .../13-sra-toolkit_2.11.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking sra-toolkit (2.11.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package med-config.
+Preparing to unpack .../14-med-config_3.7.1_all.deb ...
+Unpacking med-config (3.7.1) ...
+Setting up libfuse2:amd64 (2.9.9-5ubuntu3) ...
+Setting up libaec0:amd64 (1.0.6-1) ...
+Setting up libmbedcrypto7:amd64 (2.28.0-1build1) ...
+Setting up menu (2.1.47ubuntu4) ...
+Setting up libsz2:amd64 (1.0.6-1) ...
+Setting up blends-common (0.7.4ubuntu1) ...
+Setting up med-config (3.7.1) ...
+Adding group `med' (GID 137) ...
+Done.
+Setting up libmbedx509-1:amd64 (2.28.0-1build1) ...
+Setting up libmbedtls14:amd64 (2.28.0-1build1) ...
+Setting up libmbedtls-dev:amd64 (2.28.0-1build1) ...
+Setting up libncbi-vdb2 (2.11.2+dfsg-4build2) ...
+Setting up libncbi-wvdb2 (2.11.2+dfsg-4build2) ...
+Setting up libhdf5-103-1:amd64 (1.10.7+repack-4ubuntu2) ...
+Setting up libkdf5-2 (2.11.2+dfsg-4build2) ...
+Setting up sra-toolkit (2.11.3+dfsg-1ubuntu1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for install-info (6.8-4build1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.11) ...
+Processing triggers for menu (2.1.47ubuntu4) ...
+arijit@abhishek-OptiPlex-5050:~$ ls
+aryjit_sra_project  snap  sratoolkit.3.3.0-ubuntu64  sratoolkit.current-ubuntu64.tar.gz
+arijit@abhishek-OptiPlex-5050:~$ sudo apt update
+Get:1 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Hit:3 http://in.archive.ubuntu.com/ubuntu jammy InRelease
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:5 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,212 B]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [54.5 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [126 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3,161 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [484 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [112 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [49.2 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [5,043 kB]
+Get:16 http://in.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:17 http://in.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,244 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [790 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [360 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [57.6 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:22 http://in.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [69.4 kB]
+Get:23 http://in.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [61.1 kB]
+Get:24 http://in.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [7,304 B]
+Get:25 http://in.archive.ubuntu.com/ubuntu jammy-backports/main DEP-11 48x48 Icons [9,536 B]
+Get:26 http://in.archive.ubuntu.com/ubuntu jammy-backports/main DEP-11 64x64 Icons [11.3 kB]
+Get:27 http://in.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [412 B]
+Get:28 http://in.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:29 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [31.7 kB]
+Get:30 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [20.6 kB]
+Get:31 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.9 kB]
+Get:32 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [10.2 kB]
+Get:33 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 48x48 Icons [20.7 kB]
+Get:34 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [29.3 kB]
+Get:35 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [672 B]
+Get:36 http://in.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Fetched 12.2 MB in 4s (2,956 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+arijit@abhishek-OptiPlex-5050:~$ apt list --upgradable
+Listing... Done
+google-chrome-stable/stable 143.0.7499.169-1 amd64 [upgradable from: 143.0.7499.146-1]
+N: There is 1 additional version. Please use the '-a' switch to see it
+arijit@abhishek-OptiPlex-5050:~$ -a
+-a: command not found
+arijit@abhishek-OptiPlex-5050:~$ sudo apt install sra-toolkit -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+sra-toolkit is already the newest version (2.11.3+dfsg-1ubuntu1).
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+arijit@abhishek-OptiPlex-5050:~$ ^C
+arijit@abhishek-OptiPlex-5050:~$ fastq-dump --version
+
+"fastq-dump" version 2.11.3
+
+arijit@abhishek-OptiPlex-5050:~$ prefetch SRR9853855
+
+2025-12-23T06:48:32 prefetch.2.11.3: Current preference is set to retrieve SRA Normalized Format files with full base quality score                                s.
+2025-12-23T06:48:33 prefetch.2.11.3 warn: Maximum file size download limit is 20GB
+2025-12-23T06:48:33 prefetch.2.11.3: 1) 'SRR9853855' (48GB) is larger than maximum allowed: skipped
+
+Download of some files was skipped because they are too large
+You can change size download limit by setting
+--min-size and --max-size command line arguments
+arijit@abhishek-OptiPlex-5050:~$ prefetch SRR9853855 --max-size 60g
+
+2025-12-23T06:50:02 prefetch.2.11.3: Current preference is set to retrieve SRA Normalized Format files with full base quality score                                s.
+2025-12-23T06:50:05 prefetch.2.11.3: 1) Downloading 'SRR9853855'...
+2025-12-23T06:50:05 prefetch.2.11.3: SRA Normalized Format file is being retrieved, if this is different from your preference, it m                                ay be due to current file availability.
+2025-12-23T06:50:05 prefetch.2.11.3:  Downloading via HTTPS...
+2025-12-23T07:58:51 prefetch.2.11.3:  HTTPS download succeed
+2025-12-23T07:58:51 prefetch.2.11.3:   verifying 'SRR9853855'...
+2025-12-23T08:04:31 prefetch.2.11.3:  'SRR9853855' is valid
+2025-12-23T08:04:31 prefetch.2.11.3: 1) 'SRR9853855' was downloaded successfully
+2025-12-23T08:04:31 prefetch.2.11.3: 'SRR9853855' has 0 unresolved dependencies
+arijit@abhishek-OptiPlex-5050:~$ ^C
+arijit@abhishek-OptiPlex-5050:~$ ls -lh ~/ncbi/public/sra/SRR9853855.sra
+ls: cannot access '/home/arijit/ncbi/public/sra/SRR9853855.sra': No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ ls -lh ~/ncbi/public/sra/
+ls: cannot access '/home/arijit/ncbi/public/sra/': No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ find ~/ncbi -name "SRR9853855.sra"
+find: ‘/home/arijit/ncbi’: No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ ls -lh ~/.ncbi/public/sra/
+ls: cannot access '/home/arijit/.ncbi/public/sra/': No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ vdb-config -p
+<Config>
+  <APPNAME>vdb-config</APPNAME>
+  <APPPATH>/home/arijit/</APPPATH>
+  <BUILD>DEBUG</BUILD>
+  <HOME>/home/arijit</HOME>
+  <HOST/>
+  <LIBS>
+    <GUID>806b5c3b-0088-4732-8359-51630950d723</GUID>
+  </LIBS>
+  <NCBI_HOME>/home/arijit/.ncbi</NCBI_HOME>
+  <NCBI_SETTINGS>/home/arijit/.ncbi/user-settings.mkfg</NCBI_SETTINGS>
+  <OS>linux</OS>
+  <PWD>/home/arijit</PWD>
+  <USER>arijit</USER>
+  <VDBCOPY>
+    <DO_NOT_REDACT>CS_KEY,FLOW_CHARS,KEY_SEQUENCE,LINKER_SEQUENCE</DO_NOT_REDACT>
+    <META>
+      <IGNORE>col,.seq,STATS,BASE_COUNT,HUFFMAN_TREE_POS,HUFFMAN_TREE_POS_SIZE,HUFFMAN_TREE_PRB,HUFFMAN_TREE_PRB_SIZE,HUFFMAN_TREE_SIG,HUFFMAN_TREE_SIG_SIZE,MSC454T,MSC454_CLIP_QUALITY_RIGHT,MSC454_FLOW_CHARS,MSC454_KEY_SEQUENCE,NREADS,NUMBER_POS_CHANNELS,NUMBER_PRB_CHANNELS_1,NUMBER_PRB_COLUMNS,NUMBER_SIG_CHANNELS,PLATFORM,T_COUNT</IGNORE>
+    </META>
+    <NCBI_SRA_ABI_tbl_v1_1>
+      <schema>/usr/lib/ncbi-vdb/sra/abi.vschema</schema>
+      <tab>NCBI:SRA:ABI:tbl:v2</tab>
+    </NCBI_SRA_ABI_tbl_v1_1>
+    <NCBI_SRA_Illumina_tbl_v0a_1>
+      <schema>/usr/lib/ncbi-vdb/sra/illumina.vschema</schema>
+      <tab>NCBI:SRA:Illumina:tbl:phred:v2</tab>
+    </NCBI_SRA_Illumina_tbl_v0a_1>
+    <NCBI_SRA__454__tbl_v0_1>
+      <schema>sra/454.vschema</schema>
+      <tab>NCBI:SRA:_454_:tbl:v2</tab>
+    </NCBI_SRA__454__tbl_v0_1>
+    <READ_FILTER_COL_NAME>READ_FILTER</READ_FILTER_COL_NAME>
+    <REDACTABLE_TYPES>INSDC:color:text,INSDC:x2cs:bin,INSDC:2cs:bin,INSDC:2cs:packed,INSDC:dna:text,INSDC:4na:bin,INSDC:4na:packed,INSDC:x2na:bin,INSDC:2na:bin,INSI:SRA:pos16,INSDC:quality:phred,INSDC:quality:log_odds,NCBI:qual4,INSDC:position:one,INSDC:position:zero,NCBI:fsamp4,NCBI:isamp1</REDACTABLE_TYPES>
+    <REDACTVALUE>
+      <INSDC_color_text>
+        <VALUE>'.'</VALUE>
+      </INSDC_color_text>
+      <INSDC_dna_text>
+        <VALUE>'N'</VALUE>
+      </INSDC_dna_text>
+      <NCBI_qual4>
+        <VALUE>-6</VALUE>
+      </NCBI_qual4>
+      <TYPES>INSDC_color_text,INSDC_dna_text,NCBI_qual4</TYPES>
+    </REDACTVALUE>
+    <SCORE>
+      <INSDC_2cs_bin>2</INSDC_2cs_bin>
+      <INSDC_2cs_packed>2</INSDC_2cs_packed>
+      <INSDC_2na_bin>2</INSDC_2na_bin>
+      <INSDC_2na_packed>2</INSDC_2na_packed>
+      <INSDC_SRA_read_type>1</INSDC_SRA_read_type>
+      <INSDC_quality_log_odds>1</INSDC_quality_log_odds>
+      <INSDC_quality_phred>1</INSDC_quality_phred>
+      <INSDC_x2cs_bin>1</INSDC_x2cs_bin>
+      <INSDC_x2na_bin>1</INSDC_x2na_bin>
+    </SCORE>
+    <_454_>
+      <schema>sra/454.vschema</schema>
+      <tab>NCBI:SRA:_454_:tbl:v2</tab>
+    </_454_>
+    <_ABSOLID_>
+      <schema>/usr/lib/ncbi-vdb/sra/abi.vschema</schema>
+      <tab>NCBI:SRA:ABI:tbl:v2</tab>
+    </_ABSOLID_>
+    <_ILLUMINA_>
+      <schema>/usr/lib/ncbi-vdb/sra/illumina.vschema</schema>
+      <tab>NCBI:SRA:Illumina:tbl:phred:v2</tab>
+    </_ILLUMINA_>
+  </VDBCOPY>
+  <VDB_CONFIG/>
+  <VDB_ROOT/>
+  <config>
+    <default>true</default>
+  </config>
+  <kfg>
+    <arch>
+      <bits>64</bits>
+      <name>abhishek-OptiPlex-5050</name>
+    </arch>
+    <dir>/etc/ncbi</dir>
+    <name>certs.kfg</name>
+  </kfg>
+  <libs>
+    <cloud>
+      <report_instance_identity>false</report_instance_identity>
+    </cloud>
+  </libs>
+  <repository>
+    <remote>
+      <main>
+        <CGI>
+          <resolver-cgi>https://trace.ncbi.nlm.nih.gov/Traces/names/names.fcgi</resolver-cgi>
+        </CGI>
+        <SDL.2>
+          <resolver-cgi>https://locate.ncbi.nlm.nih.gov/sdl/2/retrieve</resolver-cgi>
+        </SDL.2>
+      </main>
+      <protected>
+        <CGI>
+          <resolver-cgi>https://trace.ncbi.nlm.nih.gov/Traces/names/names.fcgi</resolver-cgi>
+        </CGI>
+        <SDL.2>
+          <resolver-cgi>https://locate.ncbi.nlm.nih.gov/sdl/2/retrieve</resolver-cgi>
+        </SDL.2>
+      </protected>
+    </remote>
+    <user>
+      <ad>
+        <public>
+          <apps>
+            <file>
+              <volumes>
+                <flat/>
+                <flatAd>.</flatAd>
+              </volumes>
+            </file>
+            <refseq>
+              <volumes>
+                <refseqAd>.</refseqAd>
+              </volumes>
+            </refseq>
+            <sra>
+              <volumes>
+                <sraAd>.</sraAd>
+              </volumes>
+            </sra>
+            <sraPileup>
+              <volumes>
+                <ad>.</ad>
+              </volumes>
+            </sraPileup>
+            <sraRealign>
+              <volumes>
+                <ad>.</ad>
+              </volumes>
+            </sraRealign>
+            <wgs>
+              <volumes>
+                <wgsAd>.</wgsAd>
+              </volumes>
+            </wgs>
+          </apps>
+          <root>.</root>
+        </public>
+      </ad>
+      <main>
+        <public>
+          <apps>
+            <file>
+              <volumes>
+                <flat>files</flat>
+              </volumes>
+            </file>
+            <nakmer>
+              <volumes>
+                <nakmerFlat>nannot</nakmerFlat>
+              </volumes>
+            </nakmer>
+            <nannot>
+              <volumes>
+                <nannotFlat>nannot</nannotFlat>
+              </volumes>
+            </nannot>
+            <refseq>
+              <volumes>
+                <refseq>refseq</refseq>
+              </volumes>
+            </refseq>
+            <sra>
+              <volumes>
+                <sraFlat>sra</sraFlat>
+              </volumes>
+            </sra>
+            <sraPileup>
+              <volumes>
+                <withExtFlat>sra</withExtFlat>
+              </volumes>
+            </sraPileup>
+            <sraRealign>
+              <volumes>
+                <withExtFlat>sra</withExtFlat>
+              </volumes>
+            </sraRealign>
+            <wgs>
+              <volumes>
+                <wgsFlat>wgs</wgsFlat>
+              </volumes>
+            </wgs>
+          </apps>
+        </public>
+      </main>
+    </user>
+  </repository>
+  <sra>
+    <quality_type>raw_scores</quality_type>
+  </sra>
+  <strings>
+    <names>https://trace.ncbi.nlm.nih.gov/Traces/names/names.fcgi</names>
+    <sdl>https://locate.ncbi.nlm.nih.gov/sdl/2/retrieve</sdl>
+  </strings>
+  <tls>
+    <ca.crt>
+      <ncbi1>-----BEGIN CERTIFICATE-----
+MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD
+QTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT
+MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j
+b20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB
+CSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97
+nh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt
+43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P
+T19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4
+gdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO
+BgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR
+TLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw
+DQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr
+hMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg
+06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF
+PnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls
+YSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk
+CAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4wOTAeBggrBgEFBQcD
+BAYIKwYBBQUHAwEGCCsGAQUFBwMDDBdEaWdpQ2VydCBHbG9iYWwgUm9vdCBDQQ==
+-----END CERTIFICATE-----
+</ncbi1>
+      <ncbi2>-----BEGIN CERTIFICATE-----
+MIIDxTCCAq2gAwIBAgIQAqxcJmoLQJuPC3nyrkYldzANBgkqhkiG9w0BAQUFADBs
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+ZSBFViBSb290IENBMB4XDTA2MTExMDAwMDAwMFoXDTMxMTExMDAwMDAwMFowbDEL
+MAkGA1UEBhMCVVMxFTATBgNVBAoTDERpZ2lDZXJ0IEluYzEZMBcGA1UECxMQd3d3
+LmRpZ2ljZXJ0LmNvbTErMCkGA1UEAxMiRGlnaUNlcnQgSGlnaCBBc3N1cmFuY2Ug
+RVYgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMbM5XPm
++9S75S0tMqbf5YE/yc0lSbZxKsPVlDRnogocsF9ppkCxxLeyj9CYpKlBWTrT3JTW
+PNt0OKRKzE0lgvdKpVMSOO7zSW1xkX5jtqumX8OkhPhPYlG++MXs2ziS4wblCJEM
+xChBVfvLWokVfnHoNb9Ncgk9vjo4UFt3MRuNs8ckRZqnrG0AFFoEt7oT61EKmEFB
+Ik5lYYeBQVCmeVyJ3hlKV9Uu5l0cUyx+mM0aBhakaHPQNAQTXKFx01p8VdteZOE3
+hzBWBOURtCmAEvF5OYiiAhF8J2a3iLd48soKqDirCmTCv2ZdlYTBoSUeh10aUAsg
+EsxBu24LUTi4S8sCAwEAAaNjMGEwDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQF
+MAMBAf8wHQYDVR0OBBYEFLE+w2kD+L9HAdSYJhoIAu9jZCvDMB8GA1UdIwQYMBaA
+FLE+w2kD+L9HAdSYJhoIAu9jZCvDMA0GCSqGSIb3DQEBBQUAA4IBAQAcGgaX3Nec
+nzyIZgYIVyHbIUf4KmeqvxgydkAQV8GK83rZEWWONfqe/EW1ntlMMUu4kehDLI6z
+eM7b41N5cdblIZQB2lWHmiRk9opmzN6cN82oNLFpmyPInngiK3BD41VHMWEZ71jF
+hS9OMPagMRYjyOfiZRYzy78aG6A9+MpeizGLYAiJLQwGXFK3xPkKmNEVX58Svnw2
+Yzi9RKR/5CYrCsSXaQ3pjOLAEFe4yHYSkVXySGnYvCoCWw9E1CAx2/S6cCZdkGCe
+vEsXCS+0yx5DaMkHJ8HSXPfqIbloEpw8nL+e/IBcm2PN7EeqJSdnoDfzAIJ9VNep
++OkuE6N36B9KMEQwHgYIKwYBBQUHAwQGCCsGAQUFBwMBBggrBgEFBQcDAwwiRGln
+aUNlcnQgSGlnaCBBc3N1cmFuY2UgRVYgUm9vdCBDQQ==
+-----END CERTIFICATE-----
+</ncbi2>
+    </ca.crt>
+  </tls>
+  <tools>
+    <ascp>
+      <max_rate>450m</max_rate>
+    </ascp>
+  </tools>
+  <vdb>
+    <lib>
+      <paths>
+        <kfg>/usr/lib/x86_64-linux-gnu</kfg>
+      </paths>
+    </lib>
+  </vdb>
+</Config>
+
+arijit@abhishek-OptiPlex-5050:~$ srapath SRR9853855
+/home/arijit/SRR9853855/SRR9853855.sra
+arijit@abhishek-OptiPlex-5050:~$ ls -lh /home/arijit/SRR9853855/SRR9853855.sra
+-rw-rw-r-- 1 arijit arijit 49G Dec 23 13:28 /home/arijit/SRR9853855/SRR9853855.sra
+arijit@abhishek-OptiPlex-5050:~$ mkdir -p ~/SRR9853855_fastq
+
+fasterq-dump \
+  /home/arijit/SRR9853855/SRR9853855.sra \
+  --split-files \
+  --threads 16 \
+  --outdir ~/SRR9853855_fastq
+ls -lh*.fastq
+ls -lh *.fastq
+ls -lh
+
+spots read      : 416,730,814
+reads read      : 833,461,628
+reads written   : 833,461,628
+arijit@abhishek-OptiPlex-5050:~$ ls -lh*.fastq
+ls: invalid option -- '*'
+Try 'ls --help' for more information.
+arijit@abhishek-OptiPlex-5050:~$ ls -lh *.fastq
+ls: cannot access '*.fastq': No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ ls -lh
+total 88M
+drwxrwxr-x 2 arijit arijit 4.0K Dec 23 11:58 aryjit_sra_project
+drwx------ 4 arijit arijit 4.0K Dec 23 11:49 snap
+drwxrwxr-x 5 arijit arijit 4.0K Nov 29 04:40 sratoolkit.3.3.0-ubuntu64
+-rw-rw-r-- 1 arijit arijit  88M Nov 29 04:40 sratoolkit.current-ubuntu64.tar.gz
+drwxrwxr-x 2 arijit arijit 4.0K Dec 23 13:34 SRR9853855
+drwxrwxr-x 2 arijit arijit 4.0K Dec 23 15:57 SRR9853855_fastq
+arijit@abhishek-OptiPlex-5050:~$
+arijit@abhishek-OptiPlex-5050:~$ ls -lh SRR9853855_*.fastq
+ls: cannot access 'SRR9853855_*.fastq': No such file or directory
+arijit@abhishek-OptiPlex-5050:~$ cd SRR9853855_fastq
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ ls -lh
+total 302G
+-rw-rw-r-- 1 arijit arijit 151G Dec 23 17:39 SRR9853855_1.fastq
+-rw-rw-r-- 1 arijit arijit 151G Dec 23 17:37 SRR9853855_2.fastq
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ pigz -p 16 *.fastq
+Command 'pigz' not found, but can be installed with:
+sudo apt install pigz
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ sudo apt install pigz
+[sudo] password for arijit:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  pigz
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 63.6 kB of archives.
+After this operation, 162 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+Fetched 63.6 kB in 1s (74.0 kB/s)
+Selecting previously unselected package pigz.
+(Reading database ... 227252 files and directories currently installed.)
+Preparing to unpack .../archives/pigz_2.6-1_amd64.deb ...
+Unpacking pigz (2.6-1) ...
+Setting up pigz (2.6-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ pigz -p 16 *.fastq
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ ls -lh
+total 68G
+-rw-rw-r-- 1 arijit arijit 32G Dec 23 17:39 SRR9853855_1.fastq.gz
+-rw-rw-r-- 1 arijit arijit 36G Dec 23 17:37 SRR9853855_2.fastq.gz
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ zcat SRR9853855_1.fastq.gz | wc -l
+zcat SRR9853855_2.fastq.gz | wc -l
+^C
+^C
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ fastqc SRR9853855_1.fastq.gz SRR9853855_2.fastq.gz
+Command 'fastqc' not found, but can be installed with:
+sudo apt install fastqc
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ sudo apt update
+[sudo] password for arijit:
+Get:1 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Hit:2 http://in.archive.ubuntu.com/ubuntu jammy InRelease
+Get:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:4 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,212 B]
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [54.5 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 DEP-11 Metadata [208 B]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [125 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 DEP-11 Metadata [208 B]
+Get:10 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [112 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 DEP-11 Metadata [212 B]
+Get:13 http://in.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [360 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Get:15 http://in.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [7,328 B]
+Get:16 http://in.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 DEP-11 Metadata [212 B]
+Get:17 http://in.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [10.2 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 DEP-11 Metadata [212 B]
+Fetched 1,058 kB in 6s (176 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ sudo apt install fastqc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  default-jre default-jre-headless libapache-pom-java libargs4j-java libcommons-compress-java libcommons-io-java libcommons-jexl2-java libcommons-lang3-java
+  libcommons-logging-java libcommons-math3-java libcommons-parent-java libfindbin-libs-perl libhtsjdk-java libjbzip2-java libjson-simple-java libngs-java
+  libngs-sdk-dev libngs-sdk2 libsis-base-java libsis-base-jni libsis-jhdf5-java libsis-jhdf5-jni libsnappy-java libsnappy-jni libsnappy1v5
+Suggested packages:
+  libxz-java libcommons-io-java-doc libcommons-lang3-java-doc libavalon-framework-java libcommons-logging-java-doc libexcalibur-logkit-java liblog4j1.2-java
+  picard-tools libjson-simple-doc
+The following NEW packages will be installed:
+  default-jre default-jre-headless fastqc libapache-pom-java libargs4j-java libcommons-compress-java libcommons-io-java libcommons-jexl2-java
+  libcommons-lang3-java libcommons-logging-java libcommons-math3-java libcommons-parent-java libfindbin-libs-perl libhtsjdk-java libjbzip2-java
+  libjson-simple-java libngs-java libngs-sdk-dev libngs-sdk2 libsis-base-java libsis-base-jni libsis-jhdf5-java libsis-jhdf5-jni libsnappy-java libsnappy-jni
+  libsnappy1v5
+0 upgraded, 26 newly installed, 0 to remove and 1 not upgraded.
+Need to get 8,090 kB of archives.
+After this operation, 12.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 default-jre-headless amd64 2:1.11-72build2 [3,042 B]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 default-jre amd64 2:1.11-72build2 [896 B]
+Get:3 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-math3-java all 3.6.1-3 [2,016 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libjbzip2-java all 0.9.1-7 [42.8 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libapache-pom-java all 18-1 [4,720 B]
+Get:6 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-parent-java all 43-1 [10.8 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-compress-java all 1.21-1 [575 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-logging-java all 1.2-2 [60.3 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-jexl2-java all 2.1.1-5 [251 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libjson-simple-java all 2.3.0-1 [61.0 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-sdk2 amd64 2.11.2-3 [65.6 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-sdk-dev amd64 2.11.2-3 [111 kB]
+Get:13 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libngs-java amd64 2.11.2-3 [75.8 kB]
+Get:14 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libsnappy1v5 amd64 1.1.8-1build3 [17.5 kB]
+Get:15 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsnappy-jni amd64 1.1.8.3-1 [6,756 B]
+Get:16 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsnappy-java all 1.1.8.3-1 [93.9 kB]
+Get:17 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libhtsjdk-java all 2.24.1+dfsg-1 [1,644 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libfindbin-libs-perl all 2.190.02-1 [23.2 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libargs4j-java all 2.33-1.1 [137 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-io-java all 2.11.0-2 [297 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libcommons-lang3-java all 3.11-1 [526 kB]
+Get:22 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-base-jni amd64 18.09~pre1+git20180928.45fbd31+dfsg-3 [12.7 kB]
+Get:23 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-base-java all 18.09~pre1+git20180928.45fbd31+dfsg-3 [96.4 kB]
+Get:24 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-jhdf5-jni amd64 19.04.0+dfsg-4 [96.6 kB]
+Get:25 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libsis-jhdf5-java all 19.04.0+dfsg-4 [1,490 kB]
+Get:26 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 fastqc all 0.11.9+dfsg-5 [370 kB]
+Fetched 8,090 kB in 5s (1,635 kB/s)
+Selecting previously unselected package default-jre-headless.
+(Reading database ... 227261 files and directories currently installed.)
+Preparing to unpack .../00-default-jre-headless_2%3a1.11-72build2_amd64.deb ...
+Unpacking default-jre-headless (2:1.11-72build2) ...
+Selecting previously unselected package default-jre.
+Preparing to unpack .../01-default-jre_2%3a1.11-72build2_amd64.deb ...
+Unpacking default-jre (2:1.11-72build2) ...
+Selecting previously unselected package libcommons-math3-java.
+Preparing to unpack .../02-libcommons-math3-java_3.6.1-3_all.deb ...
+Unpacking libcommons-math3-java (3.6.1-3) ...
+Selecting previously unselected package libjbzip2-java.
+Preparing to unpack .../03-libjbzip2-java_0.9.1-7_all.deb ...
+Unpacking libjbzip2-java (0.9.1-7) ...
+Selecting previously unselected package libapache-pom-java.
+Preparing to unpack .../04-libapache-pom-java_18-1_all.deb ...
+Unpacking libapache-pom-java (18-1) ...
+Selecting previously unselected package libcommons-parent-java.
+Preparing to unpack .../05-libcommons-parent-java_43-1_all.deb ...
+Unpacking libcommons-parent-java (43-1) ...
+Selecting previously unselected package libcommons-compress-java.
+Preparing to unpack .../06-libcommons-compress-java_1.21-1_all.deb ...
+Unpacking libcommons-compress-java (1.21-1) ...
+Selecting previously unselected package libcommons-logging-java.
+Preparing to unpack .../07-libcommons-logging-java_1.2-2_all.deb ...
+Unpacking libcommons-logging-java (1.2-2) ...
+Selecting previously unselected package libcommons-jexl2-java.
+Preparing to unpack .../08-libcommons-jexl2-java_2.1.1-5_all.deb ...
+Unpacking libcommons-jexl2-java (2.1.1-5) ...
+Selecting previously unselected package libjson-simple-java.
+Preparing to unpack .../09-libjson-simple-java_2.3.0-1_all.deb ...
+Unpacking libjson-simple-java (2.3.0-1) ...
+Selecting previously unselected package libngs-sdk2:amd64.
+Preparing to unpack .../10-libngs-sdk2_2.11.2-3_amd64.deb ...
+Unpacking libngs-sdk2:amd64 (2.11.2-3) ...
+Selecting previously unselected package libngs-sdk-dev:amd64.
+Preparing to unpack .../11-libngs-sdk-dev_2.11.2-3_amd64.deb ...
+Unpacking libngs-sdk-dev:amd64 (2.11.2-3) ...
+Selecting previously unselected package libngs-java:amd64.
+Preparing to unpack .../12-libngs-java_2.11.2-3_amd64.deb ...
+Unpacking libngs-java:amd64 (2.11.2-3) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../13-libsnappy1v5_1.1.8-1build3_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.8-1build3) ...
+Selecting previously unselected package libsnappy-jni.
+Preparing to unpack .../14-libsnappy-jni_1.1.8.3-1_amd64.deb ...
+Unpacking libsnappy-jni (1.1.8.3-1) ...
+Selecting previously unselected package libsnappy-java.
+Preparing to unpack .../15-libsnappy-java_1.1.8.3-1_all.deb ...
+Unpacking libsnappy-java (1.1.8.3-1) ...
+Selecting previously unselected package libhtsjdk-java.
+Preparing to unpack .../16-libhtsjdk-java_2.24.1+dfsg-1_all.deb ...
+Unpacking libhtsjdk-java (2.24.1+dfsg-1) ...
+Selecting previously unselected package libfindbin-libs-perl.
+Preparing to unpack .../17-libfindbin-libs-perl_2.190.02-1_all.deb ...
+Unpacking libfindbin-libs-perl (2.190.02-1) ...
+Selecting previously unselected package libargs4j-java.
+Preparing to unpack .../18-libargs4j-java_2.33-1.1_all.deb ...
+Unpacking libargs4j-java (2.33-1.1) ...
+Selecting previously unselected package libcommons-io-java.
+Preparing to unpack .../19-libcommons-io-java_2.11.0-2_all.deb ...
+Unpacking libcommons-io-java (2.11.0-2) ...
+Selecting previously unselected package libcommons-lang3-java.
+Preparing to unpack .../20-libcommons-lang3-java_3.11-1_all.deb ...
+Unpacking libcommons-lang3-java (3.11-1) ...
+Selecting previously unselected package libsis-base-jni.
+Preparing to unpack .../21-libsis-base-jni_18.09~pre1+git20180928.45fbd31+dfsg-3_amd64.deb ...
+Unpacking libsis-base-jni (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Selecting previously unselected package libsis-base-java.
+Preparing to unpack .../22-libsis-base-java_18.09~pre1+git20180928.45fbd31+dfsg-3_all.deb ...
+Unpacking libsis-base-java (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Selecting previously unselected package libsis-jhdf5-jni.
+Preparing to unpack .../23-libsis-jhdf5-jni_19.04.0+dfsg-4_amd64.deb ...
+Unpacking libsis-jhdf5-jni (19.04.0+dfsg-4) ...
+Selecting previously unselected package libsis-jhdf5-java.
+Preparing to unpack .../24-libsis-jhdf5-java_19.04.0+dfsg-4_all.deb ...
+Unpacking libsis-jhdf5-java (19.04.0+dfsg-4) ...
+Selecting previously unselected package fastqc.
+Preparing to unpack .../25-fastqc_0.11.9+dfsg-5_all.deb ...
+Unpacking fastqc (0.11.9+dfsg-5) ...
+Setting up default-jre-headless (2:1.11-72build2) ...
+Setting up libngs-sdk2:amd64 (2.11.2-3) ...
+Setting up libfindbin-libs-perl (2.190.02-1) ...
+Setting up default-jre (2:1.11-72build2) ...
+Setting up libjson-simple-java (2.3.0-1) ...
+Setting up libsnappy1v5:amd64 (1.1.8-1build3) ...
+Setting up libsis-base-jni (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Setting up libapache-pom-java (18-1) ...
+Setting up libjbzip2-java (0.9.1-7) ...
+Setting up libngs-sdk-dev:amd64 (2.11.2-3) ...
+Setting up libcommons-math3-java (3.6.1-3) ...
+Setting up libsis-jhdf5-jni (19.04.0+dfsg-4) ...
+Setting up libngs-java:amd64 (2.11.2-3) ...
+Setting up libsnappy-jni (1.1.8.3-1) ...
+Setting up libargs4j-java (2.33-1.1) ...
+Setting up libcommons-parent-java (43-1) ...
+Setting up libcommons-logging-java (1.2-2) ...
+Setting up libcommons-jexl2-java (2.1.1-5) ...
+Setting up libcommons-lang3-java (3.11-1) ...
+Setting up libsnappy-java (1.1.8.3-1) ...
+Setting up libcommons-compress-java (1.21-1) ...
+Setting up libcommons-io-java (2.11.0-2) ...
+Setting up libsis-base-java (18.09~pre1+git20180928.45fbd31+dfsg-3) ...
+Setting up libhtsjdk-java (2.24.1+dfsg-1) ...
+Setting up libsis-jhdf5-java (19.04.0+dfsg-4) ...
+Setting up fastqc (0.11.9+dfsg-5) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.11) ...
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ fastqc --version
+FastQC v0.11.9
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$ fastqc SRR9853855_1.fastq.gz SRR9853855_2.fastq.gz
+Started analysis of SRR9853855_1.fastq.gz
+Approx 5% complete for SRR9853855_1.fastq.gz
+Approx 10% complete for SRR9853855_1.fastq.gz
+Approx 15% complete for SRR9853855_1.fastq.gz
+Approx 20% complete for SRR9853855_1.fastq.gz
+Approx 25% complete for SRR9853855_1.fastq.gz
+Approx 30% complete for SRR9853855_1.fastq.gz
+Approx 35% complete for SRR9853855_1.fastq.gz
+Approx 40% complete for SRR9853855_1.fastq.gz
+Approx 45% complete for SRR9853855_1.fastq.gz
+Approx 50% complete for SRR9853855_1.fastq.gz
+Approx 55% complete for SRR9853855_1.fastq.gz
+Approx 60% complete for SRR9853855_1.fastq.gz
+Approx 65% complete for SRR9853855_1.fastq.gz
+Approx 70% complete for SRR9853855_1.fastq.gz
+Approx 75% complete for SRR9853855_1.fastq.gz
+Approx 80% complete for SRR9853855_1.fastq.gz
+Approx 85% complete for SRR9853855_1.fastq.gz
+Approx 90% complete for SRR9853855_1.fastq.gz
+Approx 95% complete for SRR9853855_1.fastq.gz
+Analysis complete for SRR9853855_1.fastq.gz
+Started analysis of SRR9853855_2.fastq.gz
+Approx 5% complete for SRR9853855_2.fastq.gz
+Approx 10% complete for SRR9853855_2.fastq.gz
+Approx 15% complete for SRR9853855_2.fastq.gz
+Approx 20% complete for SRR9853855_2.fastq.gz
+Approx 25% complete for SRR9853855_2.fastq.gz
+Approx 30% complete for SRR9853855_2.fastq.gz
+Approx 35% complete for SRR9853855_2.fastq.gz
+Approx 40% complete for SRR9853855_2.fastq.gz
+Approx 45% complete for SRR9853855_2.fastq.gz
+Approx 50% complete for SRR9853855_2.fastq.gz
+Approx 55% complete for SRR9853855_2.fastq.gz
+Approx 60% complete for SRR9853855_2.fastq.gz
+Approx 65% complete for SRR9853855_2.fastq.gz
+Approx 70% complete for SRR9853855_2.fastq.gz
+Approx 75% complete for SRR9853855_2.fastq.gz
+Approx 80% complete for SRR9853855_2.fastq.gz
+Approx 85% complete for SRR9853855_2.fastq.gz
+Approx 90% complete for SRR9853855_2.fastq.gz
+Approx 95% complete for SRR9853855_2.fastq.gz
+Analysis complete for SRR9853855_2.fastq.gz
+arijit@abhishek-OptiPlex-5050:~/SRR9853855_fastq$
